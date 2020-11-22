@@ -2,29 +2,49 @@
 
 <div class="d-flex col-12">
 
-  <div class="col-4">
-    <app-plate-card
-      [plates]="(numberPlates$ | async)"
-      title="All Plates"
-      >
-    </app-plate-card>
-  </div>
+  <mat-tab-group class="col-12">
 
-  <div class="col-4">
-    <app-plate-card
-      [plates]="(soldPlates$ | async)"
-      title="Sold Plates"
-      >
-    </app-plate-card>
-  </div>
+    <mat-tab label="Latest Plates">
+      <ng-template matTabContent class="col-10 border">
+        <app-plate-card
+          [plates]="(latestPlates$ | async)"
+          title="Latest Plates"
+          >
+        </app-plate-card>
+      </ng-template>
+    </mat-tab>
 
-  <div class="col-4">
-    <app-plate-card
-      [plates]="(mostExpensivePlates$ | async)"
-      title="Most Expensive Plates"
-      >
-    </app-plate-card>
-  </div>
+    <mat-tab label="All Plates">
+      <ng-template matTabContent class="col-10 border">
+        <app-plate-card
+          [plates]="(numberPlates$ | async)"
+          title="All Plates"
+          >
+        </app-plate-card>
+      </ng-template>
+    </mat-tab>
+
+    <mat-tab label="Sold Plates">
+      <ng-template matTabContent>
+        <app-plate-card
+          [plates]="(soldPlates$ | async)"
+          title="Sold Plates"
+          >
+        </app-plate-card>
+      </ng-template>
+    </mat-tab>
+
+    <mat-tab label="Most Expensive Plates">
+      <ng-template matTabContent>
+        <app-plate-card
+          [plates]="(mostExpensivePlates$ | async)"
+          title="Most Expensive Plates"
+          >
+        </app-plate-card>
+      </ng-template>
+    </mat-tab>
+
+  </mat-tab-group>
 
 </div>
 
