@@ -1,0 +1,57 @@
+.plate-css {
+    height: 140px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: yellow;
+    color: black;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+.account-circle {
+    left: 10px;
+    top: -25px;
+    position: absolute;
+
+    span {
+        font-size: 50px;
+    }
+}
+
+.views {
+    position: absolute;
+    top: -10px;
+    left: 65px;
+
+    #circle {
+        width: 25px;
+        height: 25px;
+        background: lightcoral;
+        border-radius: 50%;
+        padding: 3px 5px;
+    }
+}
+
+.listed-on {
+    position: absolute;
+    top: -10px;
+    left: 110px;
+
+    #rectangle {
+        padding: 2px 5px;
+        border: 1px solid lightgreen;
+        border-radius: 10px;
+        // background-color: lightgreen;
+        // color: white;
+    }
+}
+
+.flag {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    img {
+        width: 30px;
+    }
+}

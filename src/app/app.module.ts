@@ -5,7 +5,13 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PlateCardComponent } from './plate-card/plate-card.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatCardModule, MatExpansionModule, MatProgressSpinnerModule, MatTabsModule } from '@angular/material';
+import {
+  MatBadgeModule,
+  MatButtonModule,
+  MatCardModule,
+  MatExpansionModule,
+  MatProgressSpinnerModule,
+  MatTabsModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -19,7 +25,9 @@ import { MatCardModule, MatExpansionModule, MatProgressSpinnerModule, MatTabsMod
     MatCardModule,
     MatProgressSpinnerModule,
     MatExpansionModule,
-    MatTabsModule
+    MatTabsModule,
+    MatButtonModule,
+    MatBadgeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -40,8 +40,8 @@ export class AppComponent {
 
     this.numberPlates$ = plates$
       .pipe(
-        map(plates => plates.slice(0,100))
-      )
+        map(plates => plates.slice(0, 100))
+      );
 
     this.soldPlates$ = plates$
       .pipe(
