@@ -62,7 +62,8 @@ export class AppComponent {
         map(plates => {
           // return plates.sort((a, b) => (a.id > b.id) ? -1 : 1).slice(0, 250);
           // return plates.sort((a, b) => (a.id > b.id) ? -1 : 1);
-          return plates.sort((a, b) => new Date(b.created_date).getTime() - new Date(a.created_date).getTime()).slice(0, 250);
+          return plates.sort((a, b) => new Date(b.created_date).getTime() - new Date(a.created_date).getTime()).slice(0, 100);
+          // return plates.sort((a, b) => new Date(b.created_date).getTime() - new Date(a.created_date).getTime());
         })
       );
   }

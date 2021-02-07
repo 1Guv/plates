@@ -1,10 +1,14 @@
+.list-group-item {
+    padding: 0!important;
+}
+
 .plate-css {
     height: 140px;
     width: 100%;
     border-radius: 5px;
     background-color: yellow;
     color: black;
-    font-size: 1rem;
+    font-size: 1.5rem;
     padding: 10px;
 }
 
@@ -20,16 +24,11 @@
 
 .views {
     position: absolute;
-    top: -10px;
-    left: 65px;
-
-    #circle {
-        width: 25px;
-        height: 25px;
-        background: lightcoral;
-        border-radius: 50%;
-        padding: 3px 5px;
-    }
+    top: -162px;
+    // left: 65px;
+    padding: 0px 10px 0px 3px;
+    background-color: orange;
+    clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
 }
 
 .listed-on {
@@ -50,6 +49,7 @@
     position: absolute;
     top: 10px;
     right: 10px;
+    z-index: 10;
 
     img {
         width: 30px;

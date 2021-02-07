@@ -16,4 +16,12 @@ export class PlateCardComponent implements OnInit {
   ngOnInit() {
   }
 
+  sold(soldOrNot: string) {
+    if (soldOrNot === 'Yes') {
+      return 'Yes'
+    } else {
+      return 'No'
+    }
+  }
+
 }

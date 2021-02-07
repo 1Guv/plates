@@ -10,6 +10,7 @@ import {
   MatButtonModule,
   MatCardModule,
   MatExpansionModule,
+  MatIconModule,
   MatProgressSpinnerModule,
   MatTabsModule } from '@angular/material';
 
@@ -27,7 +28,8 @@ import {
     MatExpansionModule,
     MatTabsModule,
     MatButtonModule,
-    MatBadgeModule
+    MatBadgeModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
