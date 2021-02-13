@@ -34,22 +34,22 @@ export class PlateCardComponent implements OnInit {
   findCategory(plateUrl: string) {
     if (plateUrl.match(this.muslimRegex)) {
       this.category = 'MUSLIM';
-      this.imageUrl = '/assets/flags/flag_of_pakistan.svg';
+      this.imageUrl = './assets/flags/flag_of_pakistan.svg';
     };
 
     if (plateUrl.match(this.sikhRegex)) {
       this.category = 'SIKH';
-      this.imageUrl = '/assets/flags/khanda.svg';
+      this.imageUrl = './assets/flags/khanda.svg';
     };
 
     if (plateUrl.match(this.britishRegex)) {
       this.category = 'BRITISH';
-      this.imageUrl = '/assets/flags/british.svg';
+      this.imageUrl = './assets/flags/british.svg';
     };
 
     if (plateUrl.match(this.hinduRegex)) {
       this.category = 'HINDU';
-      this.imageUrl = '/assets/flags/india.svg';
+      this.imageUrl = './assets/flags/india.svg';
     };
 
     if (plateUrl === null || plateUrl === '') {
