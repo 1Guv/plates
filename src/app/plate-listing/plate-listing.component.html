@@ -1,0 +1,26 @@
+<div *ngIf="!loaded" class="d-flex justify-content-center m-5">
+    <mat-progress-spinner
+        mode="indeterminate">
+    </mat-progress-spinner>
+</div>
+
+<div class="d-flex flex-row w-100 flex-wrap my-3 justify-content-center" *ngIf="loaded">
+    <div *ngFor="let plate of latestPlates$">
+        <ng-container>
+            <app-plate-card
+                [profilePic]="'https://100k-faces.glitch.me/random-image'"
+                [plateCreated]="plate.created_date"
+                [plateCategory]="plate.url"
+                [plateId]="plate.plate_id"
+                [askingPrice]="plate.asking_price"
+                [meaning]="plate.meaning"
+                [pageViews]="plate.page_views"
+                [sellerContacted]="plate.sellercontacted"
+                [emailToFriend]="plate.emailtofriendcount"
+                [sold]="plate.sold"
+            >
+            </app-plate-card>
+        </ng-container>
+    </div>
+
+</div>

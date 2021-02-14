@@ -13,11 +13,13 @@ import {
   MatIconModule,
   MatProgressSpinnerModule,
   MatTabsModule } from '@angular/material';
+import { PlateListingComponent } from './plate-listing/plate-listing.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PlateCardComponent,
+    PlateListingComponent,
   ],
   imports: [
     BrowserModule,

@@ -6,48 +6,10 @@
 
     <mat-tab label="Latest Plates">
       <ng-template matTabContent class="col-10 border">
-        <app-plate-card
-          [plates]="(latestPlates$ | async)"
-          title="Latest Plates"
-          >
-        </app-plate-card>
-      </ng-template>
-    </mat-tab>
-
-    <mat-tab label="All Plates">
-      <ng-template matTabContent class="col-10 border">
-        <app-plate-card
-          [plates]="(numberPlates$ | async)"
-          title="All Plates"
-          >
-        </app-plate-card>
-      </ng-template>
-    </mat-tab>
-
-    <mat-tab label="Sold Plates">
-      <ng-template matTabContent>
-        <app-plate-card
-          [plates]="(soldPlates$ | async)"
-          title="Sold Plates"
-          >
-        </app-plate-card>
-      </ng-template>
-    </mat-tab>
-
-    <mat-tab label="Most Expensive Plates">
-      <ng-template matTabContent>
-        <app-plate-card
-          [plates]="(mostExpensivePlates$ | async)"
-          title="Most Expensive Plates"
-          >
-        </app-plate-card>
+        <app-plate-listing></app-plate-listing>
       </ng-template>
     </mat-tab>
 
   </mat-tab-group>
 
 </div>
-
-
-
-<!-- <pre>{{numberPlates|json}}</pre> -->

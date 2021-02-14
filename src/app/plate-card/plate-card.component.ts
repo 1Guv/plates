@@ -8,8 +8,19 @@ import { Plate } from '../plate.model';
 })
 export class PlateCardComponent implements OnInit {
 
-  @Input() plates: Array<Plate>;
+  // @Input() plates: Array<Plate>;
   @Input() title: string;
+
+  @Input() profilePic: string;
+  @Input() plateCreated: string;
+  @Input() plateCategory: string;
+  @Input() plateId: string;
+  @Input() askingPrice: string;
+  @Input() meaning: string;
+  @Input() pageViews: string;
+  @Input() sellerContacted: string;
+  @Input() emailToFriend: string;
+  @Input() sold: string;
 
   muslimRegex = /MUSLIM/g;
   sikhRegex = /SIKH/g;
@@ -23,7 +34,7 @@ export class PlateCardComponent implements OnInit {
   ngOnInit() {
   }
 
-  sold(soldOrNot: string) {
+  soldOrNot(soldOrNot: string) {
     if (soldOrNot === 'Yes') {
       return 'Yes'
     } else {
